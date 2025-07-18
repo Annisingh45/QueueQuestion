@@ -12,7 +12,6 @@ public class LRUCache {
                 this.value = value;
             }
         }
-
         private final int capacity;
         private final LinkedList<Node> queue;
 
@@ -20,7 +19,6 @@ public class LRUCache {
             this.capacity = capacity;
             this.queue = new LinkedList<>();
         }
-
 
         public int get(int key) {
             Iterator<Node> it = queue.iterator();
@@ -34,7 +32,6 @@ public class LRUCache {
             }
             return -1;
         }
-
 
         public void put(int key, int value) {
             Iterator<Node> it = queue.iterator();
@@ -51,7 +48,6 @@ public class LRUCache {
             }
             queue.addLast(new Node(key, value));
         }
-
 
         @Override
         public String toString() {

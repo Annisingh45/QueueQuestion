@@ -6,7 +6,6 @@ import java.util.Scanner;
 
 
 public class PrinterQueueSimulation {
-
     // Represents a print job with a name and priority
     static class PrintJob {
         private final String jobName;
